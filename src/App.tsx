@@ -1,7 +1,9 @@
+import Home from "./pages/Home/Home";
+
 interface Props {}
 
 const App = ({}) => {
-	return <></>;
+	return <Home />;
 };
 
 export default App;
