@@ -1,0 +1,50 @@
+.about {
+	grid-column: 1 / -1;
+	background-color: var(--c-p-400);
+	height: 76rem;
+	position: relative;
+}
+
+.aboutWrapper {
+	grid-column: 2 / 14;
+	// background-color: red;
+}
+
+.dotsIcon {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+}
+.zikZakIcon {
+	position: absolute;
+	right: 0;
+}
+
+.title {
+	margin-top: 30rem;
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.text {
+	font-size: 2.4rem;
+	margin: 3.8rem 0;
+}
+
+@media (max-width: 64em) {
+	.text {
+		font-size: 1.8rem;
+	}
+}
+
+@media (max-width: 30em) {
+	.about {
+		padding: 0 1rem;
+	}
+	.title {
+		font-size: 2.2rem;
+	}
+	.text {
+		font-size: 1.6rem;
+	}
+}

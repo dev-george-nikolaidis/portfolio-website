@@ -3,5 +3,5 @@ export interface GeneralContextState {
 }
 
 export const initialState: GeneralContextState = {
-	theme: localStorage.getItem("theme") || "Dark",
+	theme: localStorage.getItem("theme") || "Light",
 };
