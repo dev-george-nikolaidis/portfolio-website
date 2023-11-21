@@ -1,0 +1,92 @@
+.skills {
+	grid-column: 1 / -1;
+	height: 70rem;
+	background-color: var(--bg-body-400);
+}
+
+.wrapper {
+	position: relative;
+	grid-column: 2 / 14;
+}
+.title {
+	margin: 16.5rem 0 10rem 0;
+	font-weight: 600;
+	font-size: 3rem;
+}
+
+.skillsContainer {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 2rem;
+
+	gap: 4rem;
+}
+
+.skillText {
+	text-transform: uppercase;
+}
+.skillControl {
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+}
+.skillIcon {
+	margin-bottom: 1rem;
+}
+.lineIcon {
+	position: absolute;
+	top: 20%;
+	left: -8%;
+	// left: 0%;
+}
+.ZikZakIcon {
+	position: absolute;
+	bottom: -8%;
+	right: 0;
+}
+
+@media (max-width: 64em) {
+	.title {
+		font-size: 2.8rem;
+	}
+
+	.lineIcon {
+		width: 6rem;
+		top: 25%;
+		left: -4%;
+	}
+
+	.ZikZakIcon {
+		width: 4rem;
+		bottom: -16%;
+		right: 0;
+	}
+}
+
+@media (max-width: 30em) {
+	.skillsContainer {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+
+		gap: 4rem;
+	}
+	.skills {
+		height: 100%;
+		padding-bottom: 10rem;
+	}
+	.title {
+		font-size: 2.2rem;
+	}
+	.lineIcon {
+		top: 10%;
+		left: 10%;
+	}
+	.ZikZakIcon {
+		bottom: -5%;
+	}
+
+	.skillText {
+		font-size: 1.6rem;
+	}
+}
