@@ -7,7 +7,7 @@ import LaravelIcon from "../../../../assets/img/skills/laravel.svg";
 import LineIcon from "../../../../assets/img/skills/line.svg";
 import MysqlIcon from "../../../../assets/img/skills/mysql.svg";
 import NodeIcon from "../../../../assets/img/skills/node.svg";
-import PHPIcon from "../../../../assets/img/skills/php.svg";
+import PHPIcon from "../../../../assets/img/skills/php1.png";
 import ReactIcon from "../../../../assets/img/skills/react.svg";
 import SQLIcon from "../../../../assets/img/skills/sql.svg";
 import TypescriptIcon from "../../../../assets/img/skills/typescript.svg";
