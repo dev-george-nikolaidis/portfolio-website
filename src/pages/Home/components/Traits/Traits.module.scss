@@ -1,0 +1,106 @@
+.traits {
+	height: 100%;
+	grid-column: 1 / -1;
+	background-color: var(--bg-body-400);
+}
+
+.wrapper {
+	position: relative;
+	grid-column: 2 / 14;
+}
+
+.lineIcon {
+	position: absolute;
+	left: -10%;
+}
+
+.dotsIcon {
+	position: absolute;
+	top: 5%;
+	right: -8%;
+}
+.linesIcon {
+	margin: 6.5rem auto 0 auto;
+}
+.title {
+	font-size: 3rem;
+	font-weight: 600;
+	margin: 15rem 0rem 8.2rem 0;
+}
+
+.cardsContainer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	gap: 2.7rem;
+}
+
+.cardControl {
+	width: 35rem;
+	height: 64rem;
+	background-color: var(--c-p-400);
+	padding: 3.7rem 2.3rem 0 2.3rem;
+	box-shadow: var(--box-shadow-400);
+}
+
+.cardTitle {
+	font-weight: 700;
+	font-size: 3rem;
+	margin: 2.5rem 0;
+}
+
+.cardText {
+	font-size: 2.4rem;
+	line-height: 1.4;
+}
+
+@media (max-width: 64em) {
+	.title {
+	}
+
+	.cardControl {
+		width: 100%;
+		height: auto;
+		background-color: var(--c-p-400);
+		padding: 3.7rem 2.3rem 8rem 2.3rem;
+	}
+	.cardTitle {
+		font-size: 2.4rem;
+	}
+
+	.cardText {
+		font-size: 1.8rem;
+	}
+	.dotsIcon {
+		top: 5%;
+		right: 0%;
+	}
+
+	.lineIcon {
+		left: -4%;
+		// left: 0%;
+	}
+}
+
+@media (max-width: 30em) {
+	.title {
+		font-size: 2.2rem;
+	}
+
+	.cardTitle {
+		font-size: 1.8rem;
+	}
+
+	.cardText {
+		font-size: 1.6rem;
+	}
+
+	.dotsIcon {
+		right: 0%;
+	}
+
+	.lineIcon {
+		left: -0%;
+	}
+}
