@@ -1,0 +1,111 @@
+.portfolio {
+	grid-column: 1 / -1;
+	background-color: var(--c-p-400);
+	padding-bottom: 10rem;
+}
+
+.portfolioWrapper {
+	grid-column: 2 / 14;
+}
+
+.titleContainer {
+	padding: 16rem 0 10rem 0;
+	display: flex;
+}
+.title {
+	font-weight: 600;
+	font-size: 3rem;
+}
+
+.projectsContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 15rem;
+}
+
+.projectControl {
+	height: 44rem;
+	display: flex;
+	gap: 2rem;
+}
+
+.imageControl {
+	flex: 1;
+}
+.projectImg {
+	// margin-top: 8rem;
+	height: 100%;
+}
+
+.textControl {
+	flex: 1;
+	padding-left: 1.5rem;
+}
+
+.projectTile {
+	font-weight: 500;
+	font-size: 2.2rem;
+	margin-top: 3.7rem;
+}
+
+.projectText {
+	width: 90%;
+	height: 14rem;
+	margin: 2.9rem 0 2rem 0;
+}
+
+.buttonContainer {
+	display: flex;
+	gap: 2rem;
+}
+
+@media (max-width: 64em) {
+	.projectControl {
+		height: 100%;
+		display: grid;
+		grid-template-areas:
+			"img img"
+			"text  text";
+		gap: 2rem;
+		// justify-items: center;
+	}
+
+	.projectTile {
+		font-size: 2.4rem;
+	}
+
+	.projectText {
+		width: 90%;
+		height: 14rem;
+		margin: 2.9rem 0 2rem 0;
+		font-style: 1.8rem;
+	}
+
+	.textControl {
+		grid-area: text;
+	}
+
+	.imageControl {
+		flex: 1;
+		grid-area: img;
+	}
+}
+
+@media (max-width: 30em) {
+	.title {
+		font-size: 2.2rem;
+	}
+	.line {
+		width: 4rem;
+	}
+
+	.projectTile {
+		font-size: 1.8rem;
+	}
+
+	.projectText {
+		width: 100%;
+		height: 12em;
+		font-size: 1.6rem;
+	}
+}
